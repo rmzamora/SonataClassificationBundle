@@ -23,7 +23,7 @@
     ],
     "require": {
         "symfony/symfony": "~2.2",
-        "sonata-project/doctrine-orm-admin-bundle": "2.2.*@dev"
+        "rmzamora/doctrine-orm-admin-bundle": "2.2.*@dev"
     },
     "autoload": {
         "psr-0": { "Sonata\\ClassificationBundle": "" }
@@ -31,7 +31,8 @@
     "target-dir": "Sonata/ClassificationBundle",
     "extra": {
         "branch-alias": {
-            "dev-master": "2.2.x-dev"
+            "dev-2.2": "2.2.x-dev",
+            "dev-master": "2.3.x-dev"
         }
     }
 }
