@@ -1,11 +1,16 @@
 {
-    "name": "sonata-project/classification-bundle",
+    "name": "rmzamora/classification-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony SonataClassificationBundle",
-    "keywords": ["category", "tag", "taxonomy"],
+    "description": "Fork of Symfony SonataClassificationBundle",
+    "keywords": ["category", "tag", "taxonomy", "rmzamora fork"],
     "homepage": "http://sonata-project.org/bundles/classification",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Mell M. Zamora",
+            "email": "me@mellzamora.com",
+            "homepage": "http://mellzamora.com"
+        },
         {
             "name": "Thomas Rabaix",
             "email": "thomas.rabaix@sonata-project.org",
