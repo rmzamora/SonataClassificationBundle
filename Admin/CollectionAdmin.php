@@ -24,10 +24,17 @@ class CollectionAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name')
-            ->add('description', null, array('required' => false))
             ->add('enabled', null, array('required' => false))
+            ->add('name')
+            ->add('description', 'textarea', array('required' => false))
         ;
+
+        if (interface_exists('Sonata\MediaBundle\Model\MediaInterface')) {
+            $formMapper->add('media', 'sonata_media_type', array(
+                'provider' => 'sonata.media.provider.image',
+                'context'  => 'sonata_collection'
+            ));
+        }
     }
 
     /**

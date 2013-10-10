@@ -24,10 +24,10 @@ class CategoryAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name')
-            ->add('description', null, array('required' => false))
             ->add('enabled', null, array('required' => false))
-            ->add('position')
+            ->add('name')
+            ->add('description', 'textarea', array('required' => false))
+            ->add('position', 'integer', array('required' => false, 'data' => 0))
             ->add('parent', 'sonata_category_selector', array(
                 'category'      => $this->getSubject() ?: null,
                 'model_manager' => $this->getModelManager(),
@@ -35,6 +35,13 @@ class CategoryAdmin extends Admin
                 'required'      => false
             ))
         ;
+
+        if (interface_exists('Sonata\MediaBundle\Model\MediaInterface')) {
+            $formMapper->add('media', 'sonata_media_type', array(
+                'provider' => 'sonata.media.provider.image',
+                'context'  => 'sonata_category'
+            ));
+        }
     }
 
     /**
