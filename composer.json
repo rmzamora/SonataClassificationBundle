@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "symfony/symfony": "~2.2",
+        "symfony/symfony": "~2.4",
         "rmzamora/doctrine-orm-admin-bundle": "~2.3"
     },
     "suggest": {
