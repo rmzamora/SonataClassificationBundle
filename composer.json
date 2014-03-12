@@ -26,6 +26,11 @@
         "sonata-project/core-bundle": "~2.2",
         "rmzamora/doctrine-orm-admin-bundle": "~2.3"
     },
+    },
+    "require-dev": {
+        "rmzamora/rest-bundle": "~1.3",
+        "jms/serializer-bundle": "~0.13"
+    },    
     "suggest": {
         "rmzamora/media-bundle": "~2.3"
     },
