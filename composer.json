@@ -24,8 +24,8 @@
     "require": {
         "symfony/framework-bundle": "~2.3",
         "symfony/form": "~2.3",
-        "rmzamora/media-bundle": "~2.3",
-        "rmzamora/doctrine-orm-admin-bundle": "~2.3",
+        "rmzamora/media-bundle": "2.4.*",
+        "rmzamora/doctrine-orm-admin-bundle": "2.4.*",
         "sonata-project/datagrid-bundle": "~2.2@dev"
     },
     "require-dev": {
@@ -33,14 +33,14 @@
         "jms/serializer-bundle": "~0.13"
     },    
     "suggest": {
-        "rmzamora/media-bundle": "~2.3"
+        "rmzamora/media-bundle": "2.4.*"
     },
     "autoload": {
         "psr-4": { "Sonata\\ClassificationBundle\\": "" }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.3.x-dev"
+            "dev-2.4": "2.4.x-dev"
         }
     }
 }
