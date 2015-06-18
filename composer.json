@@ -32,8 +32,9 @@
         "friendsofsymfony/rest-bundle": "~1.1",
         "jms/serializer-bundle": "~0.13",
         "symfony/phpunit-bridge": "~2.7|~3.0",
-        "rmzamora/media-bundle": "2.4.*"
-    },    
+        "rmzamora/media-bundle": "2.4.*",
+        "fabpot/php-cs-fixer": "~0.5|~1.0"
+    },
     "suggest": {
         "rmzamora/media-bundle": "2.4.*"
     },
