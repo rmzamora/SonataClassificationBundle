@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping
         http://symfony.com/schema/dic/services/constraint-mapping-1.0.xsd">
 
 
@@ -10,9 +10,9 @@
             <constraint name="NotBlank" />
             <constraint name="NotNull" />
             <constraint name="Length">
-               <option name="min">2</option>
-               <option name="max">32</option>
-           </constraint>
+                <option name="min">2</option>
+                <option name="max">250</option>
+            </constraint>
         </property>
     </class>
 
@@ -21,9 +21,9 @@
             <constraint name="NotBlank" />
             <constraint name="NotNull" />
             <constraint name="Length">
-               <option name="min">2</option>
-               <option name="max">32</option>
-           </constraint>
+                <option name="min">2</option>
+                <option name="max">250</option>
+            </constraint>
         </property>
     </class>
 
@@ -32,9 +32,9 @@
             <constraint name="NotBlank" />
             <constraint name="NotNull" />
             <constraint name="Length">
-               <option name="min">2</option>
-               <option name="max">32</option>
-           </constraint>
+                <option name="min">2</option>
+                <option name="max">250</option>
+            </constraint>
         </property>
     </class>
 
@@ -43,9 +43,9 @@
             <constraint name="NotBlank" />
             <constraint name="NotNull" />
             <constraint name="Length">
-               <option name="min">2</option>
-               <option name="max">32</option>
-           </constraint>
+                <option name="min">2</option>
+                <option name="max">250</option>
+            </constraint>
         </property>
     </class>
 
