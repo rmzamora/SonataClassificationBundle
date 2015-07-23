@@ -24,26 +24,26 @@
     "require": {
         "symfony/framework-bundle": "~2.3",
         "symfony/form": "~2.3",
-        "rmzamora/media-bundle": "2.4.*",
-        "rmzamora/doctrine-orm-admin-bundle": "2.4.*",
+        "rmzamora/media-bundle": "2.4.2.*",
+        "rmzamora/doctrine-orm-admin-bundle": "2.4.2.*",
         "sonata-project/datagrid-bundle": "~2.2@dev"
     },
     "require-dev": {
         "friendsofsymfony/rest-bundle": "~1.1",
         "jms/serializer-bundle": "~0.13",
         "symfony/phpunit-bridge": "~2.7|~3.0",
-        "rmzamora/media-bundle": "2.4.*",
+        "rmzamora/media-bundle": "2.4.2.*",
         "fabpot/php-cs-fixer": "~0.5|~1.0"
     },
     "suggest": {
-        "rmzamora/media-bundle": "2.4.*"
+        "rmzamora/media-bundle": "2.4.2.*"
     },
     "autoload": {
         "psr-4": { "Sonata\\ClassificationBundle\\": "" }
     },
     "extra": {
         "branch-alias": {
-            "dev-2.4": "2.4.x-dev"
+            "dev-2.4.2": "2.4.2.x-dev"
         }
     }
 }
