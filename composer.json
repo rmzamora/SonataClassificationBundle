@@ -30,7 +30,7 @@
     },
     "require-dev": {
         "friendsofsymfony/rest-bundle": "~1.1",
-        "jms/serializer-bundle": "~0.13",
+        "jms/serializer-bundle": "~1.1",
         "symfony/phpunit-bridge": "~2.7|~3.0",
         "rmzamora/media-bundle": "2.5.0.*",
         "fabpot/php-cs-fixer": "~0.5|~1.0"
