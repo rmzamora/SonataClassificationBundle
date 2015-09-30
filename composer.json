@@ -31,12 +31,14 @@
     "require-dev": {
         "friendsofsymfony/rest-bundle": "~1.1",
         "jms/serializer-bundle": "~1.1",
-        "symfony/phpunit-bridge": "~2.7|~3.0",
         "rmzamora/media-bundle": "2.5.0.*",
-        "fabpot/php-cs-fixer": "~0.5|~1.0"
+        "symfony/phpunit-bridge": "~2.7|~3.0"
     },
     "suggest": {
         "rmzamora/media-bundle": "2.4.2.*"
+    },
+    "conflict": {
+        "jms/serializer": "<0.13"
     },
     "autoload": {
         "psr-4": { "Sonata\\ClassificationBundle\\": "" }
