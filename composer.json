@@ -22,8 +22,8 @@
         }
     ],
     "require": {
-        "symfony/framework-bundle": "~2.3",
-        "symfony/form": "~2.3",
+        "symfony/framework-bundle": "~2.3|~3.0",
+        "symfony/form": "~2.3|~3.0",
         "rmzamora/media-bundle": "2.5.0.*",
         "rmzamora/doctrine-orm-admin-bundle": "2.5.0.*",
         "rmzamora/datagrid-bundle": "2.5.0.*"
