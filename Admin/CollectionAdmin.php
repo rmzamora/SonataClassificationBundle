@@ -56,10 +56,11 @@ class CollectionAdmin extends Admin
      */
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
+        parent::configureDatagridFilters($datagridMapper);
+
         $datagridMapper
             ->add('name')
             ->add('enabled')
-            ->add('context')
         ;
     }
 
@@ -71,7 +72,9 @@ class CollectionAdmin extends Admin
         $listMapper
             ->addIdentifier('name')
             ->add('slug')
-            ->add('context')
+            ->add('context', null, array(
+                'sortable' => 'context.name',
+            ))
             ->add('enabled', null, array(
                 'editable' => true,
             ))

@@ -11,12 +11,11 @@
 
 namespace Sonata\ClassificationBundle\Admin;
 
-use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
-class TagAdmin extends Admin
+class TagAdmin extends ContextAwareAdmin
 {
     /**
      * {@inheritdoc}
@@ -40,10 +39,11 @@ class TagAdmin extends Admin
      */
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
+        parent::configureDatagridFilters($datagridMapper);
+
         $datagridMapper
             ->add('name')
             ->add('enabled')
-            ->add('context')
         ;
     }
 
@@ -55,7 +55,9 @@ class TagAdmin extends Admin
         $listMapper
             ->addIdentifier('name')
             ->add('slug')
-            ->add('context')
+            ->add('context', null, array(
+                'sortable' => 'context.name',
+            ))
             ->add('enabled', null, array('editable' => true))
             ->add('createdAt')
             ->add('updatedAt')
